@@ -66,7 +66,7 @@ TEMPLATES = [
             ],
             'libraries': {
                 'staticfiles': 'django.templatetags.static',
-            }
+            } 
         },
     },
 ]
