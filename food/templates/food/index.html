@@ -11,6 +11,22 @@
   <body>
         {% block body %}
 
+        {% for item in item_list %}
+            <div class="row">
+                <div class="col-md-3 offset-md-2">
+                    <img class="card" height="150px" src="{{ item.item_image }}" />
+                </div>
+                <div class="col-md-4">
+                    <h3>{{ item.item_name }}</h3>
+                    <h5>{{ item.item_desc }}</h5>
+                    <h6>₹{{ item.item_price }}</h6>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        {% endfor %}
+
+        {% comment %} This is old code {% endcomment %}
 		{% for item in item_list %}
         <ul>
             <li>
