@@ -26,15 +26,6 @@
                 </div>
             </div>
         {% endfor %}
-
-        {% comment %} This is old code {% endcomment %}
-		{% for item in item_list %}
-        <ul>
-            <li>
-                <a href="{% url 'food:detail' item.id  %}"> {{ item.id }} -- {{ item.item_name }}</a>
-            </li>
-        </ul>
-        {% endfor %}
         {% endblock %}
   </body>
 </html>
